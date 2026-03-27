@@ -2,13 +2,15 @@ version: "3.9"
 
 services:
   backend:
-    build: ./docker/backend
+    build:
+      context: .
+      dockerfile: docker/backend/Dockerfile
     container_name: ml_backend
     volumes:
       - ./backend:/app
       - ./ontology:/ontology
     ports:
-      - "8000:8000"
+      - "8001:8001"
     depends_on:
       - fuseki
 

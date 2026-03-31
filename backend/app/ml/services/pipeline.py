@@ -1,5 +1,5 @@
 from app.ml.model import predict_model
-from app.ontology.reasoner import enrich_with_ontology
+from app.ml.ontology.reasoner import enrich_with_ontology
 
 def run_pipeline(data):
     # 1. Predição ML

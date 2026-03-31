@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.services.pipeline import run_pipeline
+from app.ml.services.pipeline import run_pipeline
 
 app = FastAPI()
 
